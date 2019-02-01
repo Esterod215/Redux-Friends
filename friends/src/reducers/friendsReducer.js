@@ -22,7 +22,9 @@ let initialState =
           case ERROR:
           return{
             ...state,
-            error: action.payload
+            error: action.payload,
+            fetchingFriends: false,
+            addingFriend:false
           };
           default:
           return state;
